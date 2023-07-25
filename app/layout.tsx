@@ -18,11 +18,31 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="navbar">
-          <Link href="/">ホーム</Link>
-          <Link href="/join">ログイン</Link>
+        {/** navigation bar */}
+        <div className="flex justify-around items-center bg-gray-100 p-5">
+          <Link href="/" className="text-gray-800">
+            ホーム
+          </Link>
+          <form>
+            <input className="border border-black m-1" type="text" />
+            <input
+              className="border border-black text-black"
+              type="submit"
+              value="🔍"
+            />
+          </form>
+          <Link href="/login" className="text-gray-800">
+            ログイン
+          </Link>
+          <Link href="/join" className="text-gray-800">
+            会員登録
+          </Link>
         </div>
-        {children}
+        <div className="m-4">{children}</div>
+        {/** footer */}
+        <div className="fixed left-0 bottom-0 w-full bg-gray-100 p-4 text-center text-gray-500">
+          @muhyun
+        </div>
       </body>
     </html>
   );

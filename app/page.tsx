@@ -1,8 +1,5 @@
+import styles from './home.module.css'
+
 export default function Home() {
-  return (
-    <div>
-      <h4 className="title">レシピ</h4>
-      <p className="title-sub">by dev muhyun</p>
-    </div>
-  );
+  return <div>this is home</div>;
 }

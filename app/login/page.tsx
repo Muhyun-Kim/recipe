@@ -1,8 +1,7 @@
-export default function Join() {
+export default function Login() {
   return (
     <div className="flex justify-center">
       <form className="flex flex-col w-1/2">
-        <input className="mb-4" placeholder="E-Mail" type="text" name="email" />
         <input className="mb-4" placeholder="ID" type="text" name="userId" />
         <input
           className="mb-4"
@@ -10,13 +9,7 @@ export default function Join() {
           type="text"
           name="password"
         />
-        <input
-          className="mb-4"
-          placeholder="パスワード確認"
-          type="text"
-          name="password2"
-        />
-        <input type="submit" value="会員登録" />
+        <input type="submit" value="ログイン" />
       </form>
     </div>
   );
